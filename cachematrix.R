@@ -1,6 +1,19 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+# The purpose of this assignment is to write an R function that is
+# able to cache computations for finding the inverse of a matrix.
+# If a matrix is very large it will take a long time to compute
+# its inverse, especially if it has to be computed repeatedly.
+# To make the computation more efficient, is is best to cache
+# the computed inverse especially for contents of matrices that
+# are not changing. To achieve this, two functions  have been
+# created:
+# 1.  makeCacheMatrix caches the inverse of a matrix and returns
+#                     a list of functions to manage caching.
+# 2.  cacheSolve computes the inverse of the special matrix object
+#                returned from makeCacheMatrix.   
+
 ## Write a short comment describing this function
 
 #' This function creates a special matrix object that can cache its inverse.
